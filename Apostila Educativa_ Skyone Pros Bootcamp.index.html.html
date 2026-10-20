@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Apostila Educativa: Skyone Pros Bootcamp</title>
+    <style>
+        :root {
+            --bg: #ffffff; --text: #333; --muted: #555; --h1: #003366; --h2: #00509e; --h3: #007bb5; --h4: #444;
+            --border: #ddd; --border-soft: #eee; --th-bg: #f4f4f4; --link: #0066cc;
+            --hl-bg: #fff3cd; --hl-text: #856404; --hl-border: #ffeeba;
+            --ok-bg: #d4edda; --ok-text: #155724; --ok-border: #c3e6cb;
+            --bad-bg: #f8d7da; --bad-text: #721c24; --bad-border: #f5c6cb;
+            box-sizing: border-box;
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+                color-scheme: dark;
+                --bg: #16181d; --text: #e2e4e8; --muted: #b0b4bb; --h1: #8ab4f8; --h2: #7aa7ec; --h3: #6cc4f0; --h4: #cfd2d6;
+                --border: #3a3e45; --border-soft: #2c3036; --th-bg: #23262c; --link: #8ab4f8;
+                --hl-bg: #3a3320; --hl-text: #f5d98a; --hl-border: #8a7330;
+                --ok-bg: #1e3326; --ok-text: #a3dbb2; --ok-border: #3f7a52;
+                --bad-bg: #3a2024; --bad-text: #f2aab2; --bad-border: #8a3a44;
+            }
+        }
+        :root[data-theme="dark"] {
+            color-scheme: dark;
+            --bg: #16181d; --text: #e2e4e8; --muted: #b0b4bb; --h1: #8ab4f8; --h2: #7aa7ec; --h3: #6cc4f0; --h4: #cfd2d6;
+            --border: #3a3e45; --border-soft: #2c3036; --th-bg: #23262c; --link: #8ab4f8;
+            --hl-bg: #3a3320; --hl-text: #f5d98a; --hl-border: #8a7330;
+            --ok-bg: #1e3326; --ok-text: #a3dbb2; --ok-border: #3f7a52;
+            --bad-bg: #3a2024; --bad-text: #f2aab2; --bad-border: #8a3a44;
+        }
+        html { background: var(--bg); scroll-padding-top: env(safe-area-inset-top, 0px); }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 40px auto; max-width: 900px; color: var(--text); background: var(--bg); padding: 0 20px; }
+        h1 { color: var(--h1); border-bottom: 2px solid var(--h1); padding-bottom: 10px; }
+        h2 { color: var(--h2); margin-top: 40px; border-bottom: 1px solid var(--border-soft); padding-bottom: 8px; }
+        h3 { color: var(--h3); margin-top: 25px; }
+        h4 { color: var(--h4); margin-bottom: 5px; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; }
+        th, td { padding: 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+        th { background-color: var(--th-bg); font-weight: 600; }
+        pre { background-color: #272822; color: #f8f8f2; padding: 15px; border-radius: 6px; overflow-x: auto; font-size: 14px; margin: 15px 0; }
+        code { font-family: Consolas, Monaco, monospace; }
+        .highlight { background-color: var(--hl-bg); color: var(--hl-text); padding: 12px; border-left: 5px solid var(--hl-border); margin: 15px 0; border-radius: 4px; }
+        .success { background-color: var(--ok-bg); color: var(--ok-text); padding: 12px; border-left: 5px solid var(--ok-border); margin: 15px 0; border-radius: 4px; }
+        .danger { background-color: var(--bad-bg); color: var(--bad-text); padding: 12px; border-left: 5px solid var(--bad-border); margin: 15px 0; border-radius: 4px; }
+        a { color: var(--link); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { margin-top: 5px; }
+        li { margin-bottom: 8px; }
+        hr.sep { border: 0; border-top: 1px dashed var(--border); margin: 40px 0; }
+        img { max-width: 100%; }
+    </style>
+</head>
+<body>
+    <h1>Apostila Educativa: Skyone Pros Bootcamp</h1>
+    <p style="font-size: 1.2em; color: var(--muted);"><strong>Guia Completo de Estudos e Desafios Práticos</strong></p>
+
+    <h2>🔗 Links Úteis e Plataformas do Curso</h2>
+    <p>Abaixo estão os links dos principais ambientes e ferramentas que utilizaremos em nossas aulas. Recomendamos que você salve estes endereços nos seus favoritos:</p>
+    <div class="table-wrap">
+    <table>
+        <tr>
+            <th style="width: 30%;">Plataforma / Ferramenta</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><strong>Skyone Studio</strong><br><a href="https://studio.skyone.cloud/home" target="_blank">Acessar</a></td>
+            <td>O que faz: É a plataforma principal (iPaaS) que utilizaremos no curso. O Studio unifica dados, integra diferentes sistemas e operacionaliza agentes de Inteligência Artificial. Com ele, você aprenderá na prática a automatizar fluxos de trabalho, escalar a tomada de decisões e acelerar os resultados de negócio através de integrações eficientes.</td>
+        </tr>
+        <tr>
+            <td><strong>Playground de APIs (Academy)</strong><br><a href="https://academy-playground.skyone.tools/" target="_blank">Acessar</a></td>
+            <td>O que faz: É o nosso ambiente prático de simulação. Esta plataforma funciona como um laboratório onde buscaremos as APIs de teste para os exercícios práticos do curso. É também neste ambiente que você aprenderá a gerar e gerenciar credenciais de autenticação de forma segura.</td>
+        </tr>
+        <tr>
+            <td><strong>JSONata</strong><br><a href="https://docs.jsonata.org/overview.html" target="_blank">Acessar</a></td>
+            <td>O que faz: É uma linguagem leve e poderosa criada especificamente para consultar e transformardados no formato JSON. Durante as integrações, utilizaremos o JSONata para extrair, filtrar, combinar e reformatar os dados que transitam entre os sistemas. A documentação oficial servirá como seu manual para consultar operadores, criar funções e construir lógicas avançadas de manipulação de dados.</td>
+        </tr>
+        <tr>
+            <td><strong>DuckDB</strong><br><a href="https://duckdb.org/docs/current/" target="_blank">Acessar</a></td>
+            <td>O que faz: É o motor de banco de dados SQL analítico de alta performance que opera nos bastidores do Skyone Studio. Consultar a documentação do DuckDB será fundamental para entender como a plataforma processa, consulta e armazena as informações por trás das nossas integrações.</td>
+        </tr>
+    </table>
+    </div>
+
+    <h2>🤖 Skyler - Central de Ajuda</h2>
+    <p><strong>Dúvidas? Conheça a Skyler, nossa Assistente de IA</strong></p>
+    <p>Para tornar o seu aprendizado e suporte ainda mais rápidos, você conta com a Skyler, a assistente de Inteligência Artificial do Skyone Studio. Ela está preparada para resolver dúvidas técnicas gerais sobre a plataforma, DuckDB e JSONata de forma imediata, 24 horas por dia.</p>
+    
+    <h3>Como acionar a Skyler:</h3>
+    <ul>
+        <li>Dentro do Skyone Studio, localize e clique no ícone de headset (fone de ouvido) no canto superior direito da tela.</li>
+        <li>Digite sua dúvida diretamente no chat.</li>
+        <li>Da próxima vez que você precisar de uma ajuda rápida durante os desafios, esquecer alguma função ou travar em algum código, conte com a Skyler para guiar você na solução!</li>
+    </ul>
+
+    <hr class="sep">
+
+    <h2>↗️ 1. Integrações e Fluxos</h2>
+    <div class="success">
+        <strong>✅ Desafio Prático:</strong> Conexões de APIs, Fluxos e Filtros com JSONata
+    </div>
+    <p>Neste desafio, você fará a ponte entre os sistemas simulados no Playground e a plataforma Skyone Studio. Você vai configurar as autenticações, testar as chamadas e construir fluxos de integração para extrair dados específicos. Siga o passo a passo com muita atenção aos alertas:</p>
+    
+    <h4>Preparação e Geração de Token (Playground)</h4>
+    <ul>
+        <li>Acesse o Playground e faça o download dos arquivos <code>.iac</code> referentes aos sistemas de E-commerce e de WMS.</li>
+        <li>Crie 1 (um) Token de acesso e clique no botão "Usar para testes" para ativá-lo.</li>
+    </ul>
+    <div class="danger"><strong>Alerta Crítico:</strong> Copie este token e salve em um bloco de notas imediatamente! Após clicar para testar, o token irá sumir da tela e você não conseguirá copiá-lo novamente.</div>
+
+    <h4>Importação e Nomenclatura Segura (Studio)</h4>
+    <ul>
+        <li>Volte ao Skyone Studio e faça a importação dos arquivos <code>.iac</code> que você baixou.</li>
+    </ul>
+    <div class="highlight"><strong>REGRA DE OURO:</strong> Assim que o arquivo for importado, você deve obrigatoriamente alterar o nome do Módulo para o formato: <strong>[Nome do Sistema] + [Seu Nome]</strong>. Por que isso é importante? Se você deixar o nome padrão, o Studio vai bloquear a ação acusando que "o módulo já existe".</div>
+
+    <h4>Configuração da Autenticação (Conta de Conexão)</h4>
+    <ul>
+        <li>Vá até a seção de autenticação e crie as Contas de Conexão para os sistemas.</li>
+        <li>Preencha todos os parâmetros obrigatórios exigidos pela API. Certifique-se de inserir corretamente o Host, a Porta e o Token.</li>
+        <li>Após preencher tudo, salve as alterações.</li>
+    </ul>
+
+    <h4>Validação da Conexão (Teste de Fogo)</h4>
+    <ul>
+        <li>Antes de criar a integração, precisamos ter certeza de que o Studio está conversando com a API.</li>
+        <li>Entre em qualquer Operação dentro do seu módulo recém-criado.</li>
+        <li>Navegue pelo fluxo da operação até chegar no "Passo 4".</li>
+        <li>Clique no botão "Testar". Se a requisição retornar sucesso, sua conexão está validada!</li>
+    </ul>
+
+    <h4>Construção da Integração e dos Fluxos</h4>
+    <ul>
+        <li>Crie 1 (uma) Integração no Studio.</li>
+        <li>Dentro desta integração, você deverá construir 2 (dois) fluxos separados:</li>
+        <ul>
+            <li><strong>Fluxo 1 (WMS):</strong> Configurado para buscar os dados de inventário (estoque).</li>
+            <li><strong>Fluxo 2 (E-commerce):</strong> Configurado para buscar os dados de pedidos, extraindo especificamente os itens de cada pedido.</li>
+        </ul>
+    </ul>
+    <p>💡 <em>O Toque Mágico:</em> Durante a construção destes fluxos, utilize o JSONata para aplicar filtros na resposta da API, garantindo que o seu fluxo entregue apenas os dados exatos que precisamos, de forma limpa e estruturada.</p>
+
+    <hr class="sep">
+
+    <h2>↗️ 2. Configurações do Lakehouse</h2>
+    <div class="success">
+        <strong>✅ Desafio Prático:</strong> Estruturação de Dados (Data Lake e Data Warehouse)
+    </div>
+    <p>Antes de construirmos nossos dashboards e agentes, precisamos preparar o terreno onde as informações vão habitar.</p>
+
+    <h4>Criação do Banco de Dados (Data Warehouse)</h4>
+    <ul>
+        <li>Acesse o Data Warehouse e crie um novo Banco de Dados.</li>
+        <li><strong>Regra de Nomenclatura:</strong> O banco de dados deve ser criado obrigatoriamente com o seu próprio nome. Isso garante que seu ambiente seja isolado e fácil de identificar.</li>
+    </ul>
+
+    <h4>Organização dos Arquivos (Data Lake)</h4>
+    <ul>
+        <li>Acesse o Data Lake.</li>
+        <li>Na pasta raiz do sistema (identificada pelo caminho <code>/</code>), crie uma nova pasta, também levando o seu próprio nome.</li>
+    </ul>
+
+    <h4>Configuração do Consumidor de Dados (ODBC)</h4>
+    <ul>
+        <li>Navegue pelo menu: Data Management -&gt; Engine -&gt; ODBC.</li>
+        <li>Crie um novo Consumidor de Dados utilizando o seu nome. É através deste consumidor que a "Elisa" vai se conectar.</li>
+    </ul>
+
+    <h4>Execução das Queries (Arquitetura Medalhão)</h4>
+    <ul>
+        <li>Execute as queries em ordem para criar e popular as tabelas.</li>
+    </ul>
+    <div class="highlight"><strong>Atenção ao ajuste na camada GOLD:</strong> Ao rodar as queries da camada Gold, você não deve simplesmente copiar e colar. Será necessário fazer um ajuste na linha em destaque de cada query para apontar/adicionar corretamente os arquivos.</div>
+
+    <hr class="sep">
+
+    <h2>↗️ 3. Criação das Tabelas (SQL)</h2>
+    
+    <h3>🟤 Camada Bronze [Ecommerce]</h3>
+    <pre><code>CREATE OR REPLACE TABLE bronze_orders (
+    id INTEGER,
+    order_id INTEGER,
+    product_id INTEGER,
+    quantity INTEGER,
+    unit_price VARCHAR,
+    total_price VARCHAR,
+    product JSON,
+    ingested_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO bronze_orders (id, order_id, product_id, quantity, unit_price, total_price, product)
+SELECT
+    id, order_id, product_id, quantity, unit_price, total_price, product
+FROM read_json_auto();
+
+SELECT * FROM bronze_orders;</code></pre>
+
+    <h3>⚪ Camada Silver [Ecommerce]</h3>
+    <pre><code>CREATE OR REPLACE TABLE silver_orders (
+    id INTEGER PRIMARY KEY,
+    order_id INTEGER,
+    product_id INTEGER,
+    product_sku VARCHAR, -- Extraído do objeto product
+    product_name VARCHAR, -- Extraído do objeto product
+    quantity INTEGER,
+    unit_price DECIMAL(18,2),
+    total_price DECIMAL(18,2),
+    processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO silver_orders (id, order_id, product_id, product_sku, product_name, quantity, unit_price, total_price)
+SELECT
+    id,
+    order_id,
+    product_id,
+    json_extract_string(product, '$.sku'),
+    json_extract_string(product, '$.name'),
+    CAST(quantity AS INTEGER),
+    CAST(unit_price AS DECIMAL(18,2)),
+    CAST(total_price AS DECIMAL(18,2))
+FROM bronze_orders
+ON CONFLICT (id) DO UPDATE SET
+    product_sku = EXCLUDED.product_sku,
+    product_name = EXCLUDED.product_name,
+    total_price = EXCLUDED.total_price;
+
+SELECT * FROM silver_orders;</code></pre>
+
+    <h3>🟤 Camada Bronze [WMS]</h3>
+    <pre><code>CREATE OR REPLACE TABLE bronze_inventory (
+    sku VARCHAR,
+    name VARCHAR,
+    stock_quantity INTEGER,
+    category VARCHAR,
+    ingested_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO bronze_inventory (sku, name, stock_quantity, category)
+SELECT
+    sku, name, stock_quantity, category
+FROM read_json_auto();
+
+SELECT * FROM bronze_inventory;</code></pre>
+
+    <h3>⚪ Camada Silver [WMS]</h3>
+    <pre><code>CREATE OR REPLACE TABLE silver_inventory (
+    sku VARCHAR PRIMARY KEY,
+    name VARCHAR NOT NULL,
+    stock_quantity INTEGER,
+    category VARCHAR,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO silver_inventory (sku, name, stock_quantity, category)
+SELECT DISTINCT
+    sku, name, stock_quantity, category
+FROM bronze_inventory
+ON CONFLICT (sku) DO UPDATE SET
+    stock_quantity = EXCLUDED.stock_quantity,
+    name = EXCLUDED.name,
+    category = EXCLUDED.category,
+    updated_at = now();
+
+SELECT * FROM silver_inventory;</code></pre>
+
+    <h3>🟡 Camada GOLD [Ecommerce + WMS]</h3>
+    <pre><code>CREATE OR REPLACE TABLE gold_dwh_vendas_estoque AS
+SELECT
+    -- Dados do Pedido (Vindo da silver_orders)
+    o.id AS item_pedido_id,
+    o.order_id,
+    o.product_sku AS sku,
+    o.product_name AS nome_no_pedido,
+    o.quantity AS quantidade_vendida,
+    o.unit_price AS preco_unitario,
+    o.total_price AS valor_total_item,
+    i.category AS categoria_produto,
+    i.stock_quantity AS estoque_atual_disponivel,
+    (i.stock_quantity - o.quantity) AS estoque_projetado,
+    now() AS data_analise
+FROM silver_orders o
+LEFT JOIN silver_inventory i ON o.product_sku = i.sku;
+
+SELECT * FROM gold_dwh_vendas_estoque;</code></pre>
+
+    <hr class="sep">
+
+    <h2>↗️ 4. Agentes de IA</h2>
+    <div class="success">
+        <strong>✅ Desafio Prático:</strong> Configuração do Agente e Manipulação de Dados
+    </div>
+    
+    <h4>Customização do Prompt e Guardrails</h4>
+    <ul>
+        <li><strong>Customização do Prompt:</strong> Adicione 1 nova instrução ao prompt base do agente.</li>
+        <li><strong>Guardrails:</strong> Defina e configure 3 guardrails da sua escolha (Ex: bloquear <code>drop table</code>, LGPD).</li>
+        <li><strong>Regras de Fluxo:</strong> Estabeleça 2 regras obrigatórias que o agente deverá seguir (Ex: perguntar o nome do usuário, pedir avaliação).</li>
+    </ul>
+
+    <h4>Simulação de Estoque Crítico</h4>
+    <p>Para conseguirmos testar e validar essa skill, escreva uma query SQL para alterar a tabela GOLD. Faça um UPDATE em produtos existentes para zerar as quantidades, ou um INSERT de um novo produto já sem estoque. O objetivo é manipular os dados para forçar o sistema a disparar o alerta.</p>
+
+    <h3>📝 Prompt: Agente de Gestão de Estoque Preditiva</h3>
+    <pre><code># Assistente de Gestão de Estoque Preditiva
+Olá! Eu sou o seu **Analista de IA para Supply Chain**. Minha função é monitorar o 'gold_dwh_estoque_vendas' em tempo real para evitar rupturas e otimizar seu inventário.
+
+### O que eu posso fazer por você?
+Consigo realizar análises complexas cruzando dados de vendas históricas com previsões de estoque. Meus principais comandos incluem:
+* **Detecção de Ruptura:** Identifico quais SKUs estão com estoque projetado negativo ou crítico.
+* **Cálculo de Reposição:** Sugiro a quantidade ideal de compra baseada na sua média de vendas recente.
+* **Análise por SKU:** Forneço um raio-x completo de um produto específico.
+
+### Formato de Resposta
+Minhas respostas seguirão este padrão para facilitar sua decisão:
+* **SKU / Produto:** Identificação clara.
+* **Status:** (Crítico / Alerta / Saudável).
+* **Estoque Atual vs. Projetado:** Números reais do DWH.
+* **Ação Sugerida:** Quantidade exata para compra.
+* **Justificativa:** O "porquê" analítico por trás do número.
+
+**Como posso ajudar com seu estoque agora?**</code></pre>
+
+    <h3>💾 Skill: Agente de Gestão de Estoque Preditiva (Python)</h3>
+    <pre><code class="language-python">import pandas as pd
+import json
+import logging
+from typing import Dict, Any, List
+from sqlalchemy import create_engine, text
+from sqlalchemy.orm import sessionmaker
+
+logger = logging.getLogger(__name__)
+
+def execute_query(query: str, params: Dict[str, Any] = None) -&gt; dict[str, Any]:
+    # Executa queries SQL no DWH via SQLAlchemy 2.0.
+    database = ""
+    user = ""
+    password = ""
+    host = ""
+    
+    logger.info("BI Analyst: Executing query on gold_dwh_vendas_estoque")
+    conn_string = f"postgresql+psycopg2://{user}:{password}@{host}:9000/{database}"
+    
+    engine = create_engine(conn_string, pool_pre_ping=True)
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    try:
+        sql_text = text(query.replace("`", ""))
+        if query.strip().upper().startswith(("WITH", "SELECT")):
+            df = pd.read_sql(sql_text, session.bind, params=params)
+            result = df.to_dict("records")
+            return {"result": json.loads(json.dumps(result, default=str))}
+        else:
+            session.execute(sql_text, params)
+            session.commit()
+            return {"result": "Operação de escrita concluída."}
+    except Exception as e:
+        session.rollback()
+        logger.error(f"DWH Query Error: {str(e)}")
+        return {"error": str(e)}
+    finally:
+        session.close()
+
+def get_low_stock_alerts() -&gt; Dict[str, Any]:
+    query = """
+    SELECT
+        sku, nome_no_pedido, estoque_atual_disponivel, estoque_projetado,
+        CASE
+            WHEN estoque_projetado &lt;= 0 THEN 'CRÍTICO: Ruptura Iminente'
+            WHEN estoque_projetado &lt;= 5 THEN 'ALERTA: Estoque Baixo'
+            ELSE 'SAUDÁVEL'
+        END as nivel_criticidade
+    FROM gold_dwh_vendas_estoque
+    WHERE estoque_projetado &lt;= 5
+    ORDER BY estoque_projetado ASC
+    """
+    return execute_query(query)
+
+def suggest_replenishment(sku: str = None) -&gt; Dict[str, Any]:
+    where_clause = "WHERE sku = :sku" if sku else "WHERE estoque_projetado &lt;= 5"
+    query = f"""
+    WITH metrics AS (
+        SELECT
+            sku, nome_no_pedido, estoque_atual_disponivel, estoque_projetado,
+            AVG(quantidade_vendida) OVER(PARTITION BY sku) as media_vendas_item,
+            SUM(quantidade_vendida) OVER(PARTITION BY sku) as total_vendido
+        FROM gold_dwh_vendas_estoque
+        {where_clause}
+    )
+    SELECT
+        sku, nome_no_pedido, estoque_atual_disponivel, estoque_projetado,
+        CEIL(media_vendas_item * 1.5) as sugestao_compra,
+        'Baseado em 1.5x a média de vendas recente para garantir cobertura.' as justificativa
+    FROM metrics
+    LIMIT 10
+    """
+    params = {"sku": sku} if sku else None
+    return execute_query(query, params)</code></pre>
+
+    <hr class="sep">
+
+    <h2>↗️ 5. Vibe Coding com Creator</h2>
+    <h3>Conhecendo o Creator</h3>
+    <p>O Creator é o módulo de vibe coding do Skyone Studio projetado para o desenvolvimento de soluções digitais completas a partir de instruções em linguagem natural (prompts). Principais benefícios:</p>
+    <ul>
+        <li><strong>Integração nativa:</strong> Conecta itens gerados diretamente à lógica de dados, pipelines e APIs.</li>
+        <li><strong>Aceleração de entregas:</strong> Reduz o tempo entre a ideia de negócio e a disponibilização da solução funcional.</li>
+        <li><strong>Foco operacional:</strong> Direciona a construção para fluxos de trabalho reais.</li>
+        <li><strong>Eficiência assistida:</strong> Permite refatorar, corrigir e documentar códigos legados de forma ágil com o apoio da IA.</li>
+    </ul>
+
+    <div class="success">
+        <strong>✅ Desafio Prático:</strong> Criação do seu Dashboard Customizado
+    </div>
+    <p>Sua missão agora é utilizar o Creator para construir um Dashboard inteligente, consumindo os dados da sua tabela GOLD.</p>
+    
+    <h4>Criação e Organização do App</h4>
+    <ul>
+        <li>Crie o seu aplicativo dentro do Creator.</li>
+        <li><strong>Obrigatório:</strong> Mova o seu app para os projetos que estão com O SEU NOME. Se o app não estiver na sua pasta/projeto pessoal, não conseguiremos encontrar para avaliar.</li>
+    </ul>
+
+    <h4>Conexão com o Banco de Dados (O Jeito Certo)</h4>
+    <p>Você deve se conectar com o banco de dados que você mesmo criou para consumir a tabela GOLD. Solicite diretamente ao Creator, via prompt, que ele te mostre a tela de conexão com o banco DuckDB. Ele te guiará por lá.</p>
+    <div class="danger">
+        <strong>ALERTAS CRÍTICOS (O QUE NUNCA FAZER):</strong><br>
+        <ul>
+            <li><strong>NUNCA</strong> se conecte com os bancos de dados através da tela de "Configurações" do projeto. Use sempre o prompt do Creator.</li>
+            <li><strong>NUNCA</strong> altere o banco de dados para "todos os aplicativos". Deixe a caixa de seleção de aplicar a todos os apps DESMARCADA.</li>
+        </ul>
+    </div>
+
+    <h4>Design e Identidade Visual</h4>
+    <ul>
+        <li>O seu dashboard deve refletir o design e a identidade visual da sua empresa.</li>
+        <li><strong>Requisito Mínimo:</strong> Você deve pedir para o Creator adicionar o logotipo da sua empresa como base na interface (via código).</li>
+        <li><strong>Liberdade Criativa:</strong> Com o logotipo inserido e os dados da tabela GOLD conectados, você pode montar o layout, os gráficos e os indicadores que quiser. Explore o poder do Creator!</li>
+    </ul>
+
+</body>
+</html>
